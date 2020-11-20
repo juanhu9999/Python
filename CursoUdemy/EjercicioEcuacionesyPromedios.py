@@ -13,14 +13,13 @@ b = int(input('ingrese el valor de b: '))
 c = int(input('ingrese el valor de c: '))
 
 
-
 #calculo de la raiz cuadrada del problema
 
-CuentaDentroDeLaRaiz = b**2 - (4*a*c)
+CuentaDentroDeLaRaiz = b**2 + (4*a*c)
 
-import math
+from math import sqrt 
 
-RaizCuadrada = math.sqrt(CuentaDentroDeLaRaiz)
+RaizCuadrada = sqrt(CuentaDentroDeLaRaiz)
 
 
 
@@ -28,8 +27,24 @@ RaizCuadrada = math.sqrt(CuentaDentroDeLaRaiz)
 
 Resultado = (b + RaizCuadrada) / (2*a)
 
-print('La solución es:' + Resultado)
+print('La solución es: ' + str(Resultado))
 
+#Resolucion del profesor.
+
+#3x^2-5x+2=0 x=1 x=2/3
+
+A = int(input('Ingrese el valor de A:'))
+B = int(input('Ingrese el valor de B:'))
+C = int(input('Ingrese el valor de C:'))
+
+x1 = 0
+x2 = 0
+
+if ((B**2)) - (4*A*C) < 0:
+    print('No se puede realizar')
+else:
+    x1 = -B + sqrt((B**2) - (4*A*C))/(2*A)
+    x2 = -B - sqrt((B**2) - (4*A*C))/(2*A)
 
 
 
