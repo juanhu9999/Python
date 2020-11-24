@@ -15,17 +15,19 @@ c = int(input('ingrese el valor de c: '))
 
 #calculo de la raiz cuadrada del problema
 
-CuentaDentroDeLaRaiz = b**2 + (4*a*c)
+
 
 from math import sqrt 
 
-RaizCuadrada = sqrt(CuentaDentroDeLaRaiz)
+CuentaDentroDeLaRaiz = sqrt((b**2) - (4*a*c))
+
+RaizCuadrada = (CuentaDentroDeLaRaiz)
 
 
 
 #Ecuación
 
-Resultado = (b + RaizCuadrada) / (2*a)
+Resultado = (-b + RaizCuadrada) / (2*a)
 
 print('La solución es: ' + str(Resultado))
 
@@ -43,8 +45,9 @@ x2 = 0
 if ((B**2)) - (4*A*C) < 0:
     print('No se puede realizar')
 else:
-    x1 = -B + sqrt((B**2) - (4*A*C))/(2*A)
-    x2 = -B - sqrt((B**2) - (4*A*C))/(2*A)
+    x1 = (-B + sqrt((B**2) - (4*A*C)))/(2*A)
+    x2 = (-B - sqrt((B**2) - (4*A*C)))/(2*A)
+print("La solución es:\n x1= ",x1,"\nx2= ",x2)
 
 
 
