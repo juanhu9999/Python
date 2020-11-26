@@ -24,4 +24,19 @@ LetraMayuscula = input("Ingresa una letra en mayuscula: ")
 
 print(VocalMinuscula.upper(), LetraMayuscula.lower())
 
-#
+#Ejercico 2
+
+nombre = input("indica tu nombre: ")
+
+edad = input("indica tu edad: ")
+
+sexo = input("indica tu sexo: ")
+
+print("Te llamas {}, tu edad es {}, y eres {}".format(nombre, edad, sexo))
+
+#Resolución del profesor
+
+vocal = input("Ingrese una vocal en minuscula: ")
+letra = input("Ingrese una letra en mayuscula: ")
+
+print("Tu vocal es: {}, tu letra es: {}, y la combinación de ambas es: {}".format(vocal.upper(), letra.lower(), vocal.upper()+letra.lower()))
