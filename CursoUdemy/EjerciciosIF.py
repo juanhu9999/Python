@@ -20,3 +20,13 @@ else:
     print("no es vocal")
 
 #Ejercicio2
+
+Numero = 10
+
+if Numero >= 0 :
+    print(Numero)
+else :
+    print(Numero * -1)
+
+
+#El profesor los resolvio de la misma manera
