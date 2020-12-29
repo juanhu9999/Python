@@ -7,9 +7,16 @@
 "Argentina": "Buenos Aires", "Colombia": "Bogota", "Venezuela": "Caracas", "España": "Madrid"}"""
 
 
-pais = input("Ingresa un país y descubre su capital: ")
+
 
 paises = {"Guatemala": "Ciudad de Guatemala", "El Salvador": "San Salvador", "Honduras": "Honduras","Nicaragua": "Managua", "Costa Rica": "San Jose", "Panama": "Panama",
  "Argentina": "Buenos Aires", "Colombia": "Bogota", "Venezuela": "Caracas", "España": "Madrid"}
 
-print("La capital de: {pais} es: ")
+pais = input("Ingresa un país y descubre su capital: ")
+
+letra = pais.capitalize() in paises
+
+if letra == True:
+    print("La capital de este país es: " + paises[pais.capitalize()])
+else:
+    print("Este pais no se encuentra en nuestra base de datos")
